@@ -10,7 +10,8 @@ st.title("AI Medical Report Simplifier")
 genai.configure(api_key=st.secrets["GEMINI_API_KEY"])
 
 # Use free Gemini model
-model = genai.GenerativeModel("gemini-pro")
+
+model = genai.GenerativeModel("gemini-1.5-flash")
 
 st.write("Upload your medical report and AI will explain it in simple terms.")
 
