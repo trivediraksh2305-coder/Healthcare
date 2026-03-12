@@ -1,0 +1,7 @@
+streamlit==1.32.2
+google-generativeai==0.3.2
+pypdf
+python-docx
+pillow
+pandas
+protobuf==4.25.3
