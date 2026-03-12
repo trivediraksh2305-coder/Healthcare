@@ -1,7 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 from pypdf import PdfReader
-from docx import Document
+
 
 # Page Title
 st.title("AI Medical Report Simplifier")
@@ -29,13 +29,6 @@ def read_pdf(file):
             text += page.extract_text()
     return text
 
-# Function to read DOCX
-def read_docx(file):
-    doc = Document(file)
-    text = ""
-    for para in doc.paragraphs:
-        text += para.text
-    return text
 
 
 if uploaded_file:
@@ -45,8 +38,6 @@ if uploaded_file:
     if file_type == "pdf":
         report_text = read_pdf(uploaded_file)
 
-    elif file_type == "docx":
-        report_text = read_docx(uploaded_file)
 
     else:
         report_text = ""
