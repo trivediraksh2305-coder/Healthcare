@@ -1,0 +1,9 @@
+streamlit
+google-generativeai
+pypdf
+python-docx
+pandas
+googletrans==4.0.0-rc1
+gtts
+SpeechRecognition
+pillow
